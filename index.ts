@@ -23,6 +23,7 @@ if (todo.todoOptions === "View list") {
     for(let task of toDos){
             console.log(chalk.whiteBright(task));
   };
+  break;
 
 } else if (todo.todoOptions==="Add Items") {
         
@@ -41,6 +42,7 @@ if (todo.todoOptions === "View list") {
           let poppedTask = toDos.pop();
           console.log(chalk.bgBlueBright(`${poppedTask} is discarded.`));
           console.log(toDos);
+          break;
 
 }else if (todo.todoOptions === "Update last Item"){
    
@@ -53,6 +55,7 @@ if (todo.todoOptions === "View list") {
         toDos.push(replace.change);
         console.log(chalk.bgBlueBright(`${popped} is replaced.`));
         console.log(toDos);
+        break;
         
    };
 };
